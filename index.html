@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amit Electronics</title>
+    <title>Amit Electricals</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -20,13 +20,15 @@
           </div>
           <nav>
             <ul>
-              <li><a href="/home">Home</a></li>
-              <li><a href="/work">What we do</a></li>
-              <li><a href="/About">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">What we do</a></li>
+              <li><a href="#service">Service</a></li>
             </ul>
           </nav>
-          <button class="header__btn">Contact Us</button>
+          <button class="header__btn">
+            <a href="./contact.html">Contact US</a>
+          </button>
           <div class="mobile__menu"><i class="fas fa-bars"></i></div>
         </div>
       </div>
@@ -37,12 +39,14 @@
         <div class="mobile__close"><i class="fas fa-times"></i></div>
         <div class="mobile__nav">
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/work">What we do</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">What we do</a></li>
+            <li><a href="#service">Service</a></li>
           </ul>
-          <button class="header__btn">Contact Us</button>
+          <button class="header__btn">
+            <a href="./contact.html">Contact US</a>
+          </button>
         </div>
       </div>
     </div>
@@ -71,7 +75,7 @@
             <h1>We are Provide Electrical & mechanical Services</h1>
             <p>
               We are Providing Best Services since 1992's With a Team, of well
-              experience electrical and mechanical Expert
+              experience electrical and mechanical Expert.
             </p>
             <button class="hero__in-btn">Read More</button>
           </div>
@@ -85,7 +89,7 @@
     <!-- /Hero section end/  -->
 
     <!-- Section Tools and Equipment -->
-    <section class="tools">
+    <section class="tools" id="about">
       <div class="container">
         <div class="tools__in">
           <div class="tools__img">
@@ -124,47 +128,82 @@
     </section>
 
     <!-- /Section Tools and Equipment/ -->
-    <div class="project__img">
+    <div class="project__img" id="work">
       <img src="/img/Path_18.svg" alt="" />
     </div>
     <section class="project">
       <div class="container">
-        <h2>Projects</h2>
+        <h2>What We Do</h2>
         <div class="project__inner">
           <div class="project__inner-in">
             <div class="project__inner-img"></div>
-            <h3>Lorem lorem lorem</h3>
+            <h3>Electrical & Mechanical Services</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-              ipsam, quaerat a perferendis provident iste necessitatibus alias
-              dolores. Labore, facere.
+              We are providing best services since the 1992s, with a team of
+              well Experienced Technical and Mechanical Experts.
             </p>
           </div>
           <div class="project__inner-in">
             <div class="project__inner-img1"></div>
-            <h3>Lorem lorem lorem</h3>
+            <h3>Engineering Solutions</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-              ipsam, quaerat a perferendis provident iste necessitatibus alias
-              dolores. Labore, facere.
+              We offers engineering solutions for a wide spectrum of industries
+              in areas such as heating, ventilation and air conditioning, and
+              electro-mechanical projects.
             </p>
           </div>
           <div class="project__inner-in">
             <div class="project__inner-img2"></div>
-            <h3>Lorem lorem lorem</h3>
+            <h3>Troubleshooting & Repairing</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-              ipsam, quaerat a perferendis provident iste necessitatibus alias
-              dolores. Labore, facere.
+              We are providing fast and reliable services with one of the
+              India's premier engineering solutions providers and project
+              specialists.
             </p>
           </div>
           <div class="project__inner-in">
             <div class="project__inner-img3"></div>
-            <h3>Lorem lorem lorem</h3>
+            <h3>Diagnosis & Repair</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-              ipsam, quaerat a perferendis provident iste necessitatibus alias
-              dolores. Labore, facere.
+              To operate and maintain central air conditioning systems we are
+              having good operators, technicians and engineers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="service" style="margin-bottom: 100px">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="project__inner">
+          <div class="project__inner-in">
+            <div class="project__inner-img1"></div>
+            <h3>Installation & Maintenance</h3>
+            <p>
+              We are providing a complete package of Supply, Installation and
+              Testing as well as Maintenance of air conditioning plants.
+            </p>
+          </div>
+          <div class="project__inner-in" style="height: 450px">
+            <div class="project__inner-img1"></div>
+            <h3>Electrician</h3>
+            <p>
+              We specialize in HVAC (Heating, Ventilation, and Air Conditioning)
+              projects in Industrial, Agricultural, and Commercial fields.
+            </p>
+            <p>
+              Preventive maintenance allows you to avoid costly unscheduled
+              downtime in your operation. Installation and maintenance of the
+              devices you rely on for measurement and control.
+            </p>
+          </div>
+          <div class="project__inner-in">
+            <div class="project__inner-img"></div>
+            <h3>Commercial Services</h3>
+            <p>
+              We are providing industrial air conditioning and refrigeration
+              equipment.
             </p>
           </div>
         </div>
@@ -444,11 +483,11 @@ Your message here...</textarea
     <!-- Section footer start -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__addr">
+        <!-- <div class="footer__addr">
           <h1 class="footer__logo">Amit Electricals</h1>
-        </div>
+        </div> -->
 
-        <ul class="footer__nav">
+        <!-- <ul class="footer__nav">
           <li class="nav__item">
             <h2 class="nav__title">Media</h2>
 
@@ -514,10 +553,10 @@ Your message here...</textarea
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> -->
 
         <div class="legal">
-          <p>&copy; 2019 Something. All rights reserved.</p>
+          <p>&copy; 2022 Amit Electricals Pvt Ltd. All rights reserved.</p>
 
           <div class="legal__links">
             <span

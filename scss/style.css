@@ -17,6 +17,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: #2c3a47;
+  background: #fafafd;
   font-size: 1.8rem;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
@@ -148,9 +149,10 @@ header {
   color: #fd7272;
 }
 
-.header__in .header__btn {
-  padding: 0rem 2rem;
+.header__in .header__btn a {
+  padding: 1rem 2rem;
   height: 4rem;
+  line-height: 4rem;
   font-size: 1.2rem;
   font-weight: 600;
   border: none;
@@ -164,7 +166,7 @@ header {
   border: 0.1rem solid #fd7272;
 }
 
-.header__in .header__btn:hover {
+.header__in .header__btn a:hover {
   background-color: #fafafd;
   border: 0.1rem solid #fd7272;
   color: #fd7272;
@@ -520,12 +522,11 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1000;
 }
 
 .project {
   width: 100%;
-  min-height: 80vh;
   padding: 0 0 50px 0;
 }
 
@@ -536,23 +537,21 @@ header {
 }
 
 .project .project__inner {
-  width: 80%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
 }
 
 .project .project__inner .project__inner-in {
-  max-width: 500px;
+  max-width: 400px;
+  height: 350px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -580,7 +579,7 @@ header {
   margin: 1rem 0;
   padding: 0 1rem 0.5rem 2rem;
   text-align: start;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .project .project__inner .project__inner-in .project__inner-img {

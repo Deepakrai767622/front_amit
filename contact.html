@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Electricals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <!-- Header start From here -->
+    <header>
+      <div class="container">
+        <div class="header__in">
+          <div class="logo">
+            <h3>AMIT ELECTRICALS</h3>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">What we do</a></li>
+              <li><a href="#service">Service</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn">
+            <a href="./contact.html">Contact US</a>
+          </button>
+          <div class="mobile__menu"><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </header>
+    <!-- menu mobile -->
+    <div class="mobile__head">
+      <div class="mobile__header">
+        <div class="mobile__close"><i class="fas fa-times"></i></div>
+        <div class="mobile__nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">What we do</a></li>
+            <li><a href="#service">Service</a></li>
+          </ul>
+          <button class="header__btn">
+            <a href="./contact.html">Contact US</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header End From here -->
+
+    <!-- Section form start -->
+
+    <div class="contact" style="padding: 150px 0">
+      <div class="container">
+        <div class="innerwrap">
+          <section class="section2 clearfix">
+            <div class="col2 column1 first">
+              <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+              <div
+                class="sec2map"
+                style="overflow: hidden; height: 550px; width: 100%"
+              >
+                <div id="gmap_canvas" style="height: 100%; width: 100%"></div>
+                <div>
+                  <small
+                    ><a href="http://embedgooglemaps.com">
+                      embed google maps
+                    </a></small
+                  >
+                </div>
+                <div>
+                  <small
+                    ><a href="http://freedirectorysubmissionsites.com/"
+                      >free web directories</a
+                    ></small
+                  >
+                </div>
+                <style>
+                  #gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important;
+                  }
+                </style>
+              </div>
+              <script type="text/javascript">
+                function init_map() {
+                  var myOptions = {
+                    zoom: 14,
+                    center: new google.maps.LatLng(
+                      19.075314480255834,
+                      72.88153973865361
+                    ),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  };
+                  map = new google.maps.Map(
+                    document.getElementById("gmap_canvas"),
+                    myOptions
+                  );
+                  marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(
+                      19.075314480255834,
+                      72.88153973865361
+                    ),
+                  });
+                  infowindow = new google.maps.InfoWindow({
+                    content: "<strong>My Location</strong><br>mumbai<br>",
+                  });
+                  google.maps.event.addListener(marker, "click", function () {
+                    infowindow.open(map, marker);
+                  });
+                  infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, "load", init_map);
+              </script>
+            </div>
+            <div class="col2 column2 last">
+              <div class="sec2innercont">
+                <div class="sec2addr">
+                  <h2 style="font-size: 3rem">Get In Touch</h2>
+                  <br />
+                  <p>
+                    <i
+                      class="fas fa-map-marker-alt"
+                      style="margin: 0 20px 0 0"
+                    ></i>
+                    Lda Colony, Sec L, Kanpur road, Lucknow - 226012
+                  </p>
+                  <br />
+
+                  <p>
+                    <i class="fas fa-envelope" style="margin: 0 20px 0 0"></i>
+                    contact@amitelectrics.com
+                  </p>
+                  <br />
+
+                  <p>
+                    <i
+                      class="fas fa-phone-square"
+                      style="margin: 0 20px 0 0"
+                    ></i>
+                    (+91) 999999999
+                  </p>
+                </div>
+              </div>
+              <div class="sec2contactform" style="margin: 30px 0">
+                <form action="">
+                  <div class="clearfix">
+                    <input
+                      class="col2 first"
+                      type="text"
+                      placeholder="FirstName"
+                    />
+                    <input
+                      class="col2 last"
+                      type="text"
+                      placeholder="LastName"
+                    />
+                  </div>
+                  <div class="clearfix">
+                    <input
+                      class="col2 first"
+                      type="Email"
+                      placeholder="Email"
+                    />
+                    <input
+                      class="col2 last"
+                      type="text"
+                      placeholder="Contact Number"
+                    />
+                  </div>
+                  <div class="clearfix">
+                    <textarea name="textarea" id="" cols="30" rows="7">
+    Your message here...</textarea
+                    >
+                  </div>
+                  <div class="clearfix">
+                    <input type="submit" value="Send" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Section farm end -->
+
+    <div class="fixx">.</div>
+    <!-- Section footer start -->
+    <footer class="footer">
+      <div class="container">
+        <!-- <div class="footer__addr">
+          <h1 class="footer__logo">Amit Electricals</h1>
+        </div> -->
+
+        <!-- <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+
+              <li>
+                <a href="#">Print</a>
+              </li>
+
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+
+              <li>
+                <a href="#">Automation</a>
+              </li>
+
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+
+        <div class="legal">
+          <p>&copy; 2022 Amit Electricals Pvt Ltd. All rights reserved.</p>
+
+          <div class="legal__links">
+            <span
+              >Made with <span class="heart">♥</span> remotely from
+              <a href="http://raiweb.in">raiweb</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
