@@ -365,6 +365,8 @@ header {
 
 .hero .hero__in .hero__in-img img {
   width: 100%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 83% 91%, 65% 100%, 47% 93%, 29% 100%, 16% 94%, 0 100%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 100%, 83% 91%, 65% 100%, 47% 93%, 29% 100%, 16% 94%, 0 100%, 0 0);
 }
 
 .hero .hero__in .hero__in-text {
@@ -1007,7 +1009,7 @@ header {
 }
 
 .contact .section2 span.collig {
-  color: #2c3a47;
+  color: #fd7272;
   margin-right: 10px;
   display: inline-block;
 }
@@ -1015,6 +1017,11 @@ header {
 .contact .section2 .sec2addr {
   display: block;
   line-height: 26px;
+}
+
+.contact .section2 .sec2addr p,
+.contact h2 {
+  color: #3c6382;
 }
 
 .contact .section2 .sec2addr p:first-child {
@@ -1480,5 +1487,68 @@ header {
   .projectFactsWrap .item {
     width: 100% !important;
   }
+}
+
+.about-banner {
+  width: 100vw;
+  height: 55vh;
+  position: relative;
+  background: url("../img/about-banner.svg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 12%;
+}
+
+.about-banner .about-banner-inner h2 {
+  padding: 0 0 30px 0;
+}
+
+.about-banner .about-banner-inner p {
+  width: 500px;
+}
+
+.history {
+  width: 100%;
+  height: 100%;
+}
+
+.history h2 {
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.history .hi_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.history .hi_inner .cards {
+  width: 100%;
+  max-width: 250px;
+  margin: 20px 20px 50px 20px;
+}
+
+.history .hi_inner .cards img {
+  width: 100%;
+}
+
+.history .hi_inner .cards h3 {
+  margin: 20px 0;
+  color: #3c6382;
+}
+
+.history .hi_inner .cards p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
