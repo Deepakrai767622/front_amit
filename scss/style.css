@@ -1491,12 +1491,11 @@ header {
 
 .about-banner {
   width: 100vw;
-  height: 55vh;
   position: relative;
   background: url("../img/about-banner.svg");
   background-size: cover;
   background-position: center;
-  padding-top: 12%;
+  padding: 15% 0;
 }
 
 .about-banner .about-banner-inner h2 {
@@ -1529,13 +1528,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
 }
 
 .history .hi_inner .cards {
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
   margin: 20px 20px 50px 20px;
 }
 
