@@ -3,14 +3,15 @@
 .tools {
   width: 100%;
   height: 100%;
-  margin: -50px 0 0 0;
+  margin-top: -150px;
 
   .tools__in {
-    width: 100%;
+    width: 75%;
     height: 100%;
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 
     .tools__in-text {
       width: 100%;
@@ -120,7 +121,7 @@
   }
 
   .project__inner {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -131,15 +132,14 @@
       height: 350px;
       flex: 1 1 40rem;
       margin: 1rem;
-      // box-shadow: 1rem 2rem 2rem rgba($grey-text, 0.1);
-      box-shadow: 0px 30px 10px transparent;
+      box-shadow: 6px 6px 10px rgba($grey-text, 0.2);
       background: $white;
-      // background: $secondary-color;
-      // background: rgba($secondary-color, 0.1);
-      transition: all 0.5s;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
-        box-shadow: 0px 0px 10px rgba($grey-text, 0.3);
+        box-shadow: 6px 6px 10px rgba($grey-text, 0.1);
+        background: $background-color;
+        color: $white;
       }
 
       h3 {
@@ -157,21 +157,21 @@
       }
 
       .project__inner-img {
-        background: url(../img/Image.svg);
+        background: url("../img/Image.svg");
         background-size: contain;
         background-position: center;
         height: 150px;
       }
       .project__inner-img1 {
-        background: url(../img/Image-1.svg);
+        background: url("../img/Image-1.svg");
         height: 150px;
       }
       .project__inner-img2 {
-        background: url(../img/Image-2.svg);
+        background: url("../img/Image-2.svg");
         height: 150px;
       }
       .project__inner-img3 {
-        background: url(../img/Image-3.svg);
+        background: url("../img/Image-3.svg");
         height: 150px;
       }
     }
@@ -185,7 +185,7 @@
     font-weight: 600;
     background-color: $white;
     color: $background-color;
-    border: 0.1rem solid $background-color;
+    border: 1rem solid $background-color;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.12rem;
@@ -211,7 +211,7 @@
   .counters__in-image {
     width: 100vw;
     height: 100%;
-    background: url("https://source.unsplash.com/random/800x600");
+    background: url("../img/img-101.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

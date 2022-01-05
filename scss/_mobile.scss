@@ -4,6 +4,14 @@
     padding: 0 2rem;
   }
 
+  .hero .hero__in {
+    margin: 50px 0 100px 0;
+  }
+
+  .tools {
+    margin: 50px 0 0 0;
+  }
+
   header {
     nav,
     button {
@@ -161,31 +169,31 @@
   }
 }
 
-@media (max-width: 900px) {
-  .project__img {
-    display: none;
-  }
-  .project__inner {
-    width: 100% !important;
+// @media (max-width: 900px) {
+//   .project__img {
+//     display: none;
+//   }
+//   .project__inner {
+//     width: 100% !important;
 
-    div {
-      margin: 2rem 0 !important;
-      border-radius: 0 !important;
+//     div {
+//       margin: 2rem 0 !important;
+//       border-radius: 0 !important;
 
-      img {
-        border-radius: 0 !important;
-      }
+//       img {
+//         border-radius: 0 !important;
+//       }
 
-      h3 {
-        padding: 0.5rem 1rem 0 1rem !important;
-      }
+//       h3 {
+//         padding: 0.5rem 1rem 0 1rem !important;
+//       }
 
-      p {
-        padding: 0 1rem 0.5rem 1rem !important;
-      }
-    }
-  }
-}
+//       p {
+//         padding: 0 1rem 0.5rem 1rem !important;
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 800px) {
   .projectFactsWrap {
